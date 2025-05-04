@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <title>No preguntes para preguntar, simplemente preguntá</title>
+  <meta name="description" content="Consejos para hacer mejores preguntas en comunidades tecnológicas, con un toque argentino">
+  <meta property="og:title" content="No preguntes para preguntar, simplemente preguntá" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nopreguntesparapreguntar.com.ar" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:image" content="argentina-favicon.svg"/>
+  <link rel="icon" href="argentina-favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@700&display=swap">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta name="theme-color" content="#37BBED">
+</head>
+<body>
+  <div class="argentina-banner">
+    <div class="argentina-colors"></div>
+  </div>
+
+  <header>
+    <div class="title-container">
+      <i class="fas fa-comments title-icon" aria-hidden="true"></i>
+      <h1>No preguntes para preguntar, simplemente preguntá</h1>
+    </div>
+    <div class="language-toggle">
+      <button id="es-ar" class="active">Español (AR)</button>
+      <button id="en-us">English</button>
+    </div>
+    <div class="mobile-menu-toggle" aria-label="Abrir menú móvil" role="button" tabindex="0">
+      <i class="fas fa-bars" aria-hidden="true"></i>
+    </div>
+    <nav class="mobile-menu" aria-label="Menú de navegación móvil">
+      <ul>
+        <li><a href="#inicio" class="active">Inicio</a></li>
+        <li><a href="#ejemplo">Buen Ejemplo</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="https://github.com/maunium/dontasktoask.com" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-external-link-alt fa-xs" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <article>
+      <p>
+        De vez en cuando, en los grupos de chat donde ando, alguien aparece
+        y dice algo más o menos así:
+      </p>
+
+      <blockquote class="chat-message" data-typing="true">
+        <span class="name">ElPibe123:</span>
+        <p class="message">
+          ¿Hay algún experto en JavaScript por acá?
+        </p>
+      </blockquote>
+
+      <p>
+        Esto está mal, por varias razones. Lo que la persona
+        <em>realmente</em> está preguntando es:
+      </p>
+
+      <blockquote class="chat-message expanded" data-typing="true">
+        <span class="name">ElPibe123:</span>
+        <p class="message">
+          ¿Hay algún experto en JavaScript que esté dispuesto a comprometerse a mirar mi
+          problema, sea cual sea, incluso si no está realmente relacionado
+          con JavaScript o si alguien que no sabe nada de JavaScript
+          podría responder mi pregunta?
+        </p>
+      </blockquote>
+
+      <p>
+        Hay muchas razones por las que quienes <strong>sí tienen</strong> el conocimiento no lo admitirían.
+        Al preguntar así, estás pidiendo más de lo que creés estar pidiendo.
+      </p>
+
+      <p>
+        Estás pidiendo que la gente se haga responsable. Estás cuestionando la
+        confianza de las personas en sus habilidades. También estás excluyendo a otras
+        personas innecesariamente. A menudo respondo preguntas sobre lenguajes o bibliotecas que
+        nunca usé, porque las respuestas son (en el sentido programador)
+        sentido común.
+      </p>
+
+      <p>
+        Por otro lado, puede interpretarse como:
+      </p>
+
+      <blockquote class="chat-message" data-typing="true">
+        <span class="name">ElPibe123:</span>
+        <p class="message">
+          Tengo una consulta sobre JavaScript pero me da paja formalizarla
+          en palabras a menos que haya alguien en el canal que pueda
+          responderla
+        </p>
+      </blockquote>
+
+      <p>
+        ...lo cual es simplemente vagancia. Si vos no estás dispuesto a hacer el laburo para resolver tu
+        problema, ¿por qué deberíamos hacerlo nosotros?
+      </p>
+
+      <p class="mate-section">
+        <img src="mate.svg" alt="Mate emoji" class="mate-icon">
+        <span>Como decimos acá, si querés compartir un mate, primero tenés que cebar uno bueno.</span>
+      </p>
+
+      <p>
+        La solución no es preguntar para preguntar, sino simplemente preguntar. Alguien que está
+        en el canal y que solo de vez en cuando mira lo que pasa es
+        poco probable que responda a tu pregunta de "preguntar para preguntar", pero la descripción
+        real de tu problema puede despertar su interés y hacer que te responda.
+      </p>
+
+      <p class="summary">
+        Entonces, para resumir, no preguntes
+        <em>"¿Hay algún experto en JavaScript?"</em>,
+        sino preguntá directamente
+        <em>"¿Cómo puedo hacer [problema] con JavaScript y [otra info relevante]?"</em>
+        <button class="copy-btn" aria-label="Copiar al portapapeles" title="Copiar al portapapeles">
+          <i class="fas fa-copy"></i>
+        </button>
+      </p>
+
+      <div id="ejemplo" class="code-example" aria-label="Ejemplo de formato de buena pregunta">
+        <h3>Buen formato de pregunta:</h3>
+        <pre><code>¡Hola che! Estoy intentando implementar un árbol binario de búsqueda en JavaScript pero me da un error TypeError cuando agrego el tercer elemento. Acá va mi código:
+
+<span class="code-comment">// [Tu fragmento de código acá]</span>
+
+Ya probé verificar si es null antes de la inserción, pero sigo teniendo dramas. ¿Alguna idea de qué puede estar causando esto?</code></pre>
+      </div>
+
+      <div class="humor-section">
+        <h3>Versión argenta de una mala pregunta:</h3>
+        <blockquote class="chat-message humor-message">
+          <span class="name">ElPibe123:</span>
+          <p class="message">
+            Che, ¿alguno la tiene clara con React? La página me tira un error re falopa...
+          </p>
+        </blockquote>
+        <blockquote class="chat-message humor-message">
+          <span class="name">ElPibe123:</span>
+          <p class="message">
+            [10 minutos después] Bue, nadie sabe nada parece... qué comunidad de cuarta
+          </p>
+        </blockquote>
+      </div>
+
+      <section id="recursos" class="related">
+        <h2>Recursos relacionados</h2>
+        <ul>
+          <li>Otros problemas similares: <a href="https://xyproblem.info/">El problema XY</a>, <a href="https://nohello.net/es/">No Hola</a>.</li>
+          <li>Más info: <a href="https://stackoverflow.com/help/how-to-ask">¿Cómo hacer una buena pregunta?</a>,
+          o si tenés más tiempo: <a href="http://catb.org/~esr/faqs/smart-questions.html">Cómo hacer preguntas de manera inteligente</a>.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="argentina-colors"></div>
+    <p>Contenido mayormente "afanado" de <a href="https://iki.fi/sol/dontask.html">iki.fi/sol/dontask.html</a>
+    · <a href="https://github.com/maunium/dontasktoask.com">Código fuente en GitHub</a></p>
+    <p class="slang">Adaptado al español argentino con mucho mate y buena onda 🧉</p>
+    <div class="back-to-top">
+      <a href="#inicio" aria-label="Volver al inicio">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Script para interacción -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Efecto en los blockquotes
+      const blockquotes = document.querySelectorAll('.chat-message');
+
+      blockquotes.forEach(blockquote => {
+        // Agregar timestamps a los mensajes de chat
+        const timestamp = document.createElement('span');
+        timestamp.className = 'timestamp';
+        timestamp.textContent = formatTime();
+        blockquote.appendChild(timestamp);
+
+        // Agregar animación sutil al pasar el mouse por mensajes con data-typing="true"
+        if (blockquote.getAttribute('data-typing') === 'true') {
+          const message = blockquote.querySelector('.message');
+          const originalText = message.textContent.trim();
+
+          blockquote.addEventListener('mouseenter', function() {
+            if (window.innerWidth > 640) { // Solo en desktop
+              message.classList.add('typing');
+            }
+          });
+
+          blockquote.addEventListener('mouseleave', function() {
+            message.classList.remove('typing');
+          });
+        }
+      });
+
+      // Funcionalidad de copiar al portapapeles
+      const copyBtn = document.querySelector('.copy-btn');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', function() {
+          const textToCopy = "¿Cómo puedo hacer [problema] con JavaScript y [otra info relevante]?";
+          navigator.clipboard.writeText(textToCopy).then(function() {
+            // Feedback de éxito
+            copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+            setTimeout(function() {
+              copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
+            }, 2000);
+          }).catch(function() {
+            // Feedback de error
+            copyBtn.innerHTML = '<i class="fas fa-times"></i>';
+            setTimeout(function() {
+              copyBtn.innerHTML = '<i class="fas fa-copy"></i>';
+            }, 2000);
+          });
+        });
+      }
+
+      // Toggle para menú móvil
+      const menuToggle = document.querySelector('.mobile-menu-toggle');
+      const mobileMenu = document.querySelector('.mobile-menu');
+
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', function() {
+          mobileMenu.classList.toggle('open');
+          menuToggle.classList.toggle('active');
+
+          // Cambiar ícono
+          const icon = menuToggle.querySelector('i');
+          if (mobileMenu.classList.contains('open')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+            menuToggle.setAttribute('aria-label', 'Cerrar menú móvil');
+          } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+            menuToggle.setAttribute('aria-label', 'Abrir menú móvil');
+          }
+        });
+
+        // Cerrar menú cuando se hace clic en un enlace
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            mobileMenu.classList.remove('open');
+            menuToggle.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+            menuToggle.setAttribute('aria-label', 'Abrir menú móvil');
+          });
+        });
+
+        // Permitir toggle con teclado (Enter o Space)
+        menuToggle.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            menuToggle.click();
+          }
+        });
+      }
+
+      // Cambio de idiomas (simulado)
+      const langButtons = document.querySelectorAll('.language-toggle button');
+      langButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remover clase active de todos los botones
+          langButtons.forEach(btn => btn.classList.remove('active'));
+          // Agregar clase active al botón clickeado
+          this.classList.add('active');
+
+          // En una implementación real, aquí se cargaría el otro idioma
+          if (this.id === 'en-us') {
+            alert('Esta funcionalidad estaría buenísima, pero por ahora solo está disponible en español argentino. ¡Volvé pronto!');
+            document.querySelector('#es-ar').classList.add('active');
+            this.classList.remove('active');
+          }
+        });
+      });
+
+      // Animación suave para links internos
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Resaltar sección activa en el menú
+      window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('main > article > *[id]');
+        const navLinks = document.querySelectorAll('.mobile-menu a');
+
+        let currentSection = 'inicio';
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.pageYOffset >= sectionTop - 100) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${currentSection}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Función auxiliar para formatear la hora
+      function formatTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        return `${hours}:${minutes}`;
+      }
+    });
+  </script>
+</body>
+</html>
